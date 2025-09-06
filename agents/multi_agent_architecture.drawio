@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" version="20.8.16" type="device" compressed="false">
+  <diagram id="multi_agent" name="Multi Agent">
+    <mxGraphModel dx="800" dy="600">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="PO" value="PromptOptimizer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="CW" value="CopyWriterAgent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="AB" value="ABTesterAgent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="FB" value="FeedbackAgent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="640" y="40" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="PI" value="Product info" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="240" y="140" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" source="PO" target="CW" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" source="CW" target="AB" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" source="AB" target="FB" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" source="FB" target="PO" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" source="PI" target="CW" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
